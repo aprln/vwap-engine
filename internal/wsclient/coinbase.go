@@ -3,7 +3,6 @@ package wsclient
 import (
 	"context"
 	"fmt"
-	"log"
 	"net/http"
 	"time"
 
@@ -86,7 +85,7 @@ func (c *Coinbase) SubscribeToMatchesChannel(tradingPair string) error {
 		)
 	}
 
-	log.Printf(`subscribed to product "%s" on channel "%s"`, tradingPair, CoinbaseChannelNameMatches)
+	// log.Printf(`subscribed to product "%s" on channel "%s"`, tradingPair, CoinbaseChannelNameMatches)
 
 	return nil
 }
